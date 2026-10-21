@@ -5,48 +5,48 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kontrak Karyawan – PKWT & PKWTT</title>
 <style>
-:root{--bg:#e7efed;--hd:#0b4f45;--hdx:#fff;--sf:#fff;--tx:#17211d;--mu:#5d6b65;--ln:#d6ddd9;--ac:#0f6b5c;--acx:#fff;--r:#b3261e;--rb:#fbe4e2;--o:#a04a00;--ob:#fdeacd;--y:#7a6200;--yb:#fbf2c4;--g:#1d6b3a;--gb:#dff1e4;--b:#2a4f8f;--bb:#e2eaf8}
-@media (prefers-color-scheme:dark){:root{--bg:#0e1412;--hd:#0f2a26;--hdx:#e8eeeb;--sf:#1a2220;--tx:#e8eeeb;--mu:#9aaaa3;--ln:#2e3b37;--ac:#4cc3ac;--acx:#06201a;--r:#ff9a92;--rb:#4a1f1c;--o:#ffbb7a;--ob:#47300f;--y:#ecd55c;--yb:#40380e;--g:#8fdba6;--gb:#17381f;--b:#9fbdf2;--bb:#1b2b4a}}
+:root{--bg:#f5f2ff;--hd:#7c3aed;--hdx:#fff;--sf:#fff;--tx:#17211d;--mu:#5d6b65;--ln:#d6ddd9;--ac:#7c3aed;--acx:#fff;--r:#b3261e;--rb:#fbe4e2;--o:#a04a00;--ob:#fdeacd;--y:#7a6200;--yb:#fbf2c4;--g:#1d6b3a;--gb:#dff1e4;--b:#2a4f8f;--bb:#e2eaf8}
+@media (prefers-color-scheme:dark){:root{--bg:#130f24;--hd:#c4b5fd;--hdx:#e8eeeb;--sf:#1a2220;--tx:#e8eeeb;--mu:#9aaaa3;--ln:#2e3b37;--ac:#a78bfa;--acx:#1a0b3a;--r:#ff9a92;--rb:#4a1f1c;--o:#ffbb7a;--ob:#47300f;--y:#ecd55c;--yb:#40380e;--g:#8fdba6;--gb:#17381f;--b:#9fbdf2;--bb:#1b2b4a}}
 *{box-sizing:border-box}[hidden]{display:none!important}
-body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.45 "Segoe UI",system-ui,sans-serif}
-header{background:var(--hd);color:var(--hdx);box-shadow:0 1px 4px rgba(0,0,0,.2);padding:14px 20px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+body{margin:0;background-color:var(--bg);background-image:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 800' preserveAspectRatio='xMidYMid slice'><circle cx='1080' cy='110' r='200' fill='%23f472b6' fill-opacity='.22'/><circle cx='90' cy='120' r='130' fill='%23fde047' fill-opacity='.3'/><circle cx='130' cy='690' r='250' fill='%2322d3ee' fill-opacity='.22'/><circle cx='980' cy='640' r='170' fill='%23a78bfa' fill-opacity='.25'/><circle cx='600' cy='380' r='90' fill='%2384cc16' fill-opacity='.14'/><path d='M0 660 C300 580 520 780 820 700 S1100 620 1200 670 V800 H0Z' fill='%236366f1' fill-opacity='.12'/><g fill='%23f97316' fill-opacity='.35'><circle cx='300' cy='90' r='6'/><circle cx='340' cy='130' r='4'/><circle cx='860' cy='300' r='6'/><circle cx='900' cy='340' r='4'/><circle cx='520' cy='700' r='5'/></g></svg>");background-size:cover;background-attachment:fixed;color:var(--tx);font:15px/1.45 "Segoe UI",system-ui,sans-serif}
+header{background:linear-gradient(100deg,#f97316,#ec4899 35%,#8b5cf6 70%,#0ea5e9);color:#fff;box-shadow:0 1px 4px rgba(0,0,0,.2);padding:14px 20px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
 h1{font:700 18px Georgia,serif;margin:0}h1 small{display:block;font:400 12px "Segoe UI",sans-serif;color:inherit;opacity:.75}
 nav{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
 .btn{font:inherit;padding:7px 13px;border:1px solid var(--ln);background:var(--sf);color:var(--tx);border-radius:6px;cursor:pointer}
 .btn:hover{border-color:var(--ac)}
-.btn.p{background:var(--ac);color:var(--acx);border-color:var(--ac)}.btn.d{color:var(--r)}
-nav button{font:inherit;padding:7px 14px;border:1px solid transparent;background:transparent;color:var(--hdx);border-radius:6px;cursor:pointer;opacity:.85}
+.btn.p{background:var(--ac);color:var(--acx);border-color:var(--ac)}.btn.d{color:var(--r)}.btn.gr{background:#16a34a;border-color:#16a34a;color:#fff}.btn.or{background:#f97316;border-color:#f97316;color:#fff}
+nav button{font:inherit;padding:7px 14px;border:1px solid transparent;background:transparent;color:#fff;border-radius:6px;cursor:pointer;opacity:.9}
 nav button:hover{background:rgba(255,255,255,.14);opacity:1}
-nav button.on{background:var(--hdx);color:var(--hd);opacity:1;font-weight:600}
+nav button.on{background:#fff;color:#7c3aed;opacity:1;font-weight:600}
 main{max-width:1100px;margin:0 auto;padding:16px}
 .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:16px}
-.kpi div{background:var(--sf);border:1px solid var(--ln);border-left:4px solid var(--ac);border-radius:8px;padding:10px 12px;box-shadow:0 1px 3px rgba(0,0,0,.07)}.kpi b{display:block;font-size:24px}.kpi span{color:var(--mu);font-size:12px}
+.kpi div{background:var(--sf);border:1px solid var(--ln);border-left:4px solid var(--ac);border-radius:8px;padding:10px 12px;box-shadow:0 1px 3px rgba(0,0,0,.07)}.kpi b{display:block;font-size:24px}.kpi span{color:var(--mu);font-size:12px}.kpi div:nth-child(1){border-left-color:#0891b2}.kpi div:nth-child(2){border-left-color:#2563eb}.kpi div:nth-child(3){border-left-color:#7c3aed}.kpi div:nth-child(4){border-left-color:#ef4444}.kpi div:nth-child(5){border-left-color:#f97316}.kpi div:nth-child(6){border-left-color:#84cc16}.kpi div:nth-child(1){background:color-mix(in srgb,#0891b2 14%,var(--sf))}.kpi div:nth-child(2){background:color-mix(in srgb,#2563eb 14%,var(--sf))}.kpi div:nth-child(3){background:color-mix(in srgb,#7c3aed 14%,var(--sf))}.kpi div:nth-child(4){background:color-mix(in srgb,#ef4444 14%,var(--sf))}.kpi div:nth-child(5){background:color-mix(in srgb,#f97316 14%,var(--sf))}.kpi div:nth-child(6){background:color-mix(in srgb,#84cc16 14%,var(--sf))}
 .bar{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px;align-items:center}
 input,select{font:inherit;color:var(--tx);background:var(--sf);border:1px solid var(--ln);border-radius:6px;padding:7px 9px;max-width:100%}.bar input{flex:1;min-width:150px}
 .tw{overflow-x:auto;background:var(--sf);border:1px solid var(--ln);border-radius:8px;box-shadow:0 1px 3px rgba(0,0,0,.07)}
 table{border-collapse:collapse;width:100%;min-width:720px}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--ln);vertical-align:top}
-th{font-size:12px;color:var(--mu);background:var(--bg);white-space:nowrap}tr:last-child td{border-bottom:0}table tr:not(:first-child):hover td{background:rgba(15,107,92,.06)}
+th{font-size:12px;color:var(--hd);background:color-mix(in srgb,var(--ac) 12%,var(--sf));white-space:nowrap}tr:last-child td{border-bottom:0}table tr:not(:first-child):nth-child(even) td{background:color-mix(in srgb,var(--ac) 4%,var(--sf))}table tr:not(:first-child):hover td{background:color-mix(in srgb,var(--ac) 12%,var(--sf))}.chip{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12px;font-weight:600;color:var(--c);background:color-mix(in srgb,var(--c) 15%,var(--sf));border:1px solid color-mix(in srgb,var(--c) 40%,transparent);white-space:nowrap}.hero{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 20px;border-radius:12px;margin-bottom:16px;color:#fff;background:linear-gradient(110deg,#0ea5e9,#8b5cf6 60%,#ec4899);box-shadow:0 4px 14px rgba(124,58,237,.3)}.hero b{display:block;font:700 20px Georgia,serif}.hero span{font-size:13px}.hero .big{font-size:40px}
 .tag{display:inline-block;padding:2px 8px;border-radius:99px;font-size:12px;font-weight:600;white-space:nowrap}
 .t-r{background:var(--rb);color:var(--r)}.t-o{background:var(--ob);color:var(--o)}.t-y{background:var(--yb);color:var(--y)}.t-g{background:var(--gb);color:var(--g)}.t-b{background:var(--bb);color:var(--b)}.t-n{background:var(--bg);color:var(--mu)}
 .mu{color:var(--mu);font-size:12px}.empty{padding:28px;text-align:center;color:var(--mu)}
-h2{font:700 16px Georgia,serif;margin:20px 0 8px}
+h2{font:700 16px Georgia,serif;margin:20px 0 8px;border-left:5px solid #f97316;padding-left:10px}
 dialog{border:1px solid var(--ln);border-radius:10px;background:var(--sf);color:var(--tx);width:min(560px,94vw);padding:18px}dialog::backdrop{background:rgba(0,0,0,.45)}
 .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.grid label{display:flex;flex-direction:column;gap:3px;font-size:12px;color:var(--mu)}.grid .w{grid-column:1/-1}
 @media(max-width:520px){.grid{grid-template-columns:1fr}}
-body.lg{background:var(--hd)}
+body.lg{background:linear-gradient(135deg,#f97316,#ec4899 45%,#8b5cf6)}
 #login{max-width:360px;margin:12vh auto;padding:28px;background:var(--sf);border:1px solid var(--ln);border-top:5px solid var(--ac);box-shadow:0 8px 28px rgba(0,0,0,.25);border-radius:10px;display:flex;flex-direction:column;gap:10px}
 </style>
 </head>
 <body>
 <div id="login" hidden>
-  <h1>Kontrak Karyawan<small>Masuk dengan akun dari HRD pusat</small></h1>
+  <h1>🔐 Kontrak Karyawan<small>Masuk dengan akun dari HRD pusat</small></h1>
   <input id="em" type="email" placeholder="Email" autocomplete="username">
   <input id="pw" type="password" placeholder="Password" autocomplete="current-password">
   <button class="btn p" data-a="login">Masuk</button>
   <div id="lerr" class="mu" style="color:var(--r)"></div>
 </div>
 <div id="app" hidden>
-  <header><h1>Kontrak Karyawan<small id="who"></small></h1>
+  <header><h1>📋 Kontrak Karyawan<small id="who"></small></h1>
   <nav id="nav"></nav></header>
   <main id="m"></main>
 </div>
@@ -68,11 +68,14 @@ const today=()=>{const t=new Date();return new Date(t.getFullYear(),t.getMonth()
 const left=r=>r.jenis!=="PKWT"||!r.akhir?null:Math.round((D(r.akhir)-today())/864e5);
 const fmt=s=>s?D(s).toLocaleDateString("id-ID",{day:"2-digit",month:"short",year:"numeric"}):"-";
 const cn=id=>(S.cab.find(c=>c.id==id)||{}).nama||"-";
+const PAL=["#0891b2","#7c3aed","#ec4899","#f97316","#16a34a","#2563eb","#dc2626","#ca8a04"];
+const chip=id=>`<span class="chip" style="--c:${PAL[id%PAL.length]}">${esc(cn(id))}</span>`;
+const hero=n=>`<div class="hero"><div><b>Halo${S.me&&S.me.email?", "+esc(S.me.email.split("@")[0]):""}! 👋</b><span>${new Date().toLocaleDateString("id-ID",{weekday:"long",day:"numeric",month:"long",year:"numeric"})} · ${n?"Ada <strong>"+n+"</strong> kontrak PKWT yang perlu ditindaklanjuti 🔔":"Semua kontrak PKWT aman 🎉"}</span></div><div class="big">🗓️</div></div>`;
 const opts=(list,sel,all)=>(all!=null?`<option value="">${all}</option>`:"")+list.map(c=>`<option value="${c.id}"${c.id==sel?" selected":""}>${esc(c.nama)}</option>`).join("");
 function status(r){const n=left(r);
- if(r.jenis==="PKWTT")return["Tetap","t-g"];if(n===null)return["Tanpa tgl akhir","t-n"];
- if(n<0)return["Lewat "+(-n)+" hr","t-r"];if(n<=7)return[n+" hari lagi","t-r"];if(n<=30)return[n+" hari lagi","t-o"];
- if(n<=60)return[n+" hari lagi","t-y"];if(n<=90)return[n+" hari lagi","t-b"];return[n+" hari lagi","t-g"]}
+ if(r.jenis==="PKWTT")return["✅ Tetap","t-g"];if(n===null)return["Tanpa tgl akhir","t-n"];
+ if(n<0)return["⛔ Lewat "+(-n)+" hr","t-r"];if(n<=7)return["🔴 "+n+" hari lagi","t-r"];if(n<=30)return["🟠 "+n+" hari lagi","t-o"];
+ if(n<=60)return["🟡 "+n+" hari lagi","t-y"];if(n<=90)return["🔵 "+n+" hari lagi","t-b"];return["🟢 "+n+" hari lagi","t-g"]}
 
 async function init(){
  if(!sb){const m=!LIB_OK?"Library Supabase gagal dimuat. Pastikan perangkat tersambung internet, lalu muat ulang halaman.":"Website belum dikonfigurasi. Buka index.html dengan Notepad, isi SB_URL dan SB_KEY sesuai Project Settings > API di Supabase (lihat PANDUAN.md langkah 3).";
@@ -97,33 +100,33 @@ async function rows(){const k=await sb.from("karyawan").select("*").order("nama"
 const err=e=>e&&alert("Gagal: "+e.message);
 
 function render(){
- $("nav").innerHTML=[["1","Reminder"],["2","Database"]].concat(S.admin?[["3","Pengguna"]]:[]).map(t=>`<button data-a="tab" data-v="${t[0]}" class="${S.tab==t[0]?"on":""}">${t[1]}</button>`).join("")+'<button data-a="logout">Keluar</button>';
+ $("nav").innerHTML=[["1","⏰ Reminder"],["2","🗂️ Database"]].concat(S.admin?[["3","👤 Pengguna"]]:[]).map(t=>`<button data-a="tab" data-v="${t[0]}" class="${S.tab==t[0]?"on":""}">${t[1]}</button>`).join("")+'<button data-a="logout">🚪 Keluar</button>';
  $("m").innerHTML=!S.admin&&!S.me.cabang_id?'<div class="empty">Akun Anda belum ditetapkan ke cabang. Hubungi HRD pusat.</div>':S.tab==1?vRem():S.tab==2?vDb():vUsers()}
 
 function vRem(){
  const R=S.rows,pk=R.filter(r=>r.jenis==="PKWT"),lw=pk.filter(r=>left(r)!==null&&left(r)<0).length,
  d30=pk.filter(r=>left(r)!==null&&left(r)>=0&&left(r)<=30).length,d90=pk.filter(r=>left(r)>30&&left(r)<=90).length;
- let h=`<div class="kpi"><div><b>${R.length}</b><span>Total karyawan</span></div><div><b>${pk.length}</b><span>PKWT</span></div><div><b>${R.length-pk.length}</b><span>PKWTT</span></div><div><b style="color:var(--r)">${lw}</b><span>Sudah lewat</span></div><div><b style="color:var(--o)">${d30}</b><span>Berakhir ≤ 30 hari</span></div><div><b>${d90}</b><span>31–90 hari</span></div></div>`;
+ let h=hero(d30+lw)+`<div class="kpi"><div><b>${R.length}</b><span>👥 Total karyawan</span></div><div><b>${pk.length}</b><span>📄 PKWT</span></div><div><b>${R.length-pk.length}</b><span>🏅 PKWTT</span></div><div><b style="color:var(--r)">${lw}</b><span>⛔ Sudah lewat</span></div><div><b style="color:var(--o)">${d30}</b><span>🟠 Berakhir ≤ 30 hari</span></div><div><b>${d90}</b><span>🟢 31–90 hari</span></div></div>`;
  h+=`<div class="bar"><label>PKWT berakhir dalam <select data-a="win">${[30,60,90,180].map(v=>`<option${S.win==v?" selected":""}>${v}</option>`).join("")}</select> hari</label>`+(S.admin?`<select data-a="fc">${opts(S.cab,S.fc,"Semua cabang")}</select>`:"")+`</div>`;
  const L=pk.filter(r=>left(r)!==null&&left(r)<=S.win&&(!S.fc||r.cabang_id==S.fc)).sort((a,b)=>left(a)-left(b));
  h+='<div class="tw"><table><tr><th>Nama</th><th>Cabang</th><th>Jabatan</th><th>PKWT ke-</th><th>Berakhir</th><th>Status</th></tr>';
  if(!L.length)h+=`<tr><td colspan="6" class="empty">${R.length?"Tidak ada PKWT yang berakhir dalam "+S.win+" hari.":"Belum ada data. Buka tab Database."}</td></tr>`;
- L.forEach(r=>{const s=status(r);h+=`<tr><td><b>${esc(r.nama)}</b><div class="mu">${esc(r.nik)}</div></td><td>${esc(cn(r.cabang_id))}</td><td>${esc(r.jabatan)}</td><td>${r.ke||1}</td><td>${fmt(r.akhir)}</td><td><span class="tag ${s[1]}">${s[0]}</span></td></tr>`});
+ L.forEach(r=>{const s=status(r);h+=`<tr><td><b>${esc(r.nama)}</b><div class="mu">${esc(r.nik)}</div></td><td>${chip(r.cabang_id)}</td><td>${esc(r.jabatan)}</td><td>${r.ke||1}</td><td>${fmt(r.akhir)}</td><td><span class="tag ${s[1]}">${s[0]}</span></td></tr>`});
  h+="</table></div>";
- if(S.admin){h+='<h2>Ringkasan per cabang</h2><div class="tw"><table><tr><th>Cabang</th><th>Karyawan</th><th>PKWT</th><th>PKWTT</th><th>PKWT ≤ 30 hari / lewat</th></tr>';
+ if(S.admin){h+='<h2>🏢 Ringkasan per cabang</h2><div class="tw"><table><tr><th>Cabang</th><th>Karyawan</th><th>PKWT</th><th>PKWTT</th><th>PKWT ≤ 30 hari / lewat</th></tr>';
   S.cab.forEach(c=>{const x=R.filter(r=>r.cabang_id==c.id),p=x.filter(r=>r.jenis==="PKWT"),u=p.filter(r=>left(r)!==null&&left(r)<=30).length;
-   h+=`<tr><td>${esc(c.nama)}</td><td>${x.length}</td><td>${p.length}</td><td>${x.length-p.length}</td><td>${u?`<span class="tag t-o">${u}</span>`:0}</td></tr>`});h+="</table></div>"}
+   h+=`<tr><td>${chip(c.id)}</td><td>${x.length}</td><td>${p.length}</td><td>${x.length-p.length}</td><td>${u?`<span class="tag t-o">${u}</span>`:0}</td></tr>`});h+="</table></div>"}
  return h}
 
 function filt(){const q=S.q.toLowerCase();return S.rows.filter(r=>(!S.fc||r.cabang_id==S.fc)&&(!S.fj||r.jenis===S.fj)&&(!q||(r.nama+" "+(r.nik||"")+" "+(r.jabatan||"")+" "+(r.kontrak||"")).toLowerCase().includes(q)))}
 function vDb(){const L=filt();
  let h=`<div class="bar"><input id="q" data-a="q" placeholder="Cari nama, NIK, jabatan, no. kontrak" value="${esc(S.q)}">`+(S.admin?`<select data-a="fc">${opts(S.cab,S.fc,"Semua cabang")}</select>`:"")
  +`<select data-a="fj"><option value="">PKWT & PKWTT</option><option${S.fj==="PKWT"?" selected":""}>PKWT</option><option${S.fj==="PKWTT"?" selected":""}>PKWTT</option></select>
- <button class="btn p" data-a="add">Tambah karyawan</button><button class="btn" data-a="exp">Ekspor CSV</button><label class="btn">Impor CSV<input type="file" accept=".csv,text/csv" data-a="imp" hidden></label></div>
+ <button class="btn p" data-a="add">➕ Tambah karyawan</button><button class="btn gr" data-a="exp">⬇️ Ekspor CSV</button><label class="btn or">⬆️ Impor CSV<input type="file" accept=".csv,text/csv" data-a="imp" hidden></label></div>
  <p class="mu">${L.length} dari ${S.rows.length} karyawan. Impor CSV kolom: nik, nama, cabang, jabatan, jenis, mulai, akhir, ke, kontrak, cat (tanggal 2026-12-31).</p>
  <div class="tw"><table><tr><th>Nama</th><th>Cabang</th><th>Jabatan</th><th>Jenis</th><th>Mulai</th><th>Berakhir</th><th>Ke-</th><th>Status</th><th></th></tr>`;
  if(!L.length)h+='<tr><td colspan="9" class="empty">Belum ada data yang cocok.</td></tr>';
- L.forEach(r=>{const s=status(r);h+=`<tr><td><b>${esc(r.nama)}</b><div class="mu">${esc(r.nik)}${r.kontrak?" · "+esc(r.kontrak):""}</div></td><td>${esc(cn(r.cabang_id))}</td><td>${esc(r.jabatan)}</td><td>${r.jenis}</td><td>${fmt(r.mulai)}</td><td>${fmt(r.akhir)}</td><td>${r.jenis==="PKWT"?r.ke||1:"-"}</td><td><span class="tag ${s[1]}">${s[0]}</span></td><td style="white-space:nowrap"><button class="btn" data-a="edit" data-v="${r.id}">Ubah</button> <button class="btn d" data-a="del" data-v="${r.id}">Hapus</button></td></tr>`});
+ L.forEach(r=>{const s=status(r);h+=`<tr><td><b>${esc(r.nama)}</b><div class="mu">${esc(r.nik)}${r.kontrak?" · "+esc(r.kontrak):""}</div></td><td>${chip(r.cabang_id)}</td><td>${esc(r.jabatan)}</td><td><span class="tag ${r.jenis==="PKWT"?"t-b":"t-g"}">${r.jenis}</span></td><td>${fmt(r.mulai)}</td><td>${fmt(r.akhir)}</td><td>${r.jenis==="PKWT"?r.ke||1:"-"}</td><td><span class="tag ${s[1]}">${s[0]}</span></td><td style="white-space:nowrap"><button class="btn" data-a="edit" data-v="${r.id}">Ubah</button> <button class="btn d" data-a="del" data-v="${r.id}">Hapus</button></td></tr>`});
  return h+"</table></div>"}
 
 function vUsers(){
